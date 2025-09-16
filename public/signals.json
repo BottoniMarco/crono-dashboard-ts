@@ -1,26 +1,42 @@
 [
-    {
-        "id": "100",
-        "type": "role_change",
-        "title": "title_1",
-        "subtitle": "Role Change",
-        "date": "Sep 15, 2025",
-        "unread": true
-    },
-    {
-        "id": "200",
-        "type": "company_change",
-        "title": "title_2",
-        "subtitle": "Company change",
-        "date": "Sep 15, 2025",
-        "unread": true
-    },
-    {
-        "id": "300",
-        "type": "website_view",
-        "title": "title_3",
-        "subtitle": "Website view",
-        "date": "Sep 15, 2025",
-        "unread": true
-    }
+  {
+    "id": "100",
+    "type": "role_change",
+    "title": "Robert Smith changed role from SDR to Senior SDR at WeRoad",
+    "subtitle": "Role change",
+    "date": "Apr 2, 2025",
+    "unread": true
+  },
+  {
+    "id": "200",
+    "type": "company_change",
+    "title": "Robert Smith changed role from SDR to Senior SDR at WeRoad",
+    "subtitle": "Company change",
+    "date": "Apr 2, 2025",
+    "unread": true
+  },
+  {
+    "id": "300",
+    "type": "website_view",
+    "title": "Amazon viewed 2 pages of your website for 65 sec",
+    "subtitle": "Website view",
+    "date": "Apr 2, 2025",
+    "unread": true
+  },
+  {
+    "id": "400",
+    "type": "website_view",
+    "title": "Amazon viewed 2 pages of your website for 65 sec",
+    "subtitle": "Website view",
+    "date": "Apr 2, 2025",
+    "unread": true
+  },
+  {
+    "id": "500",
+    "type": "role_change",
+    "title": "Robert Smith changed role from SDR to Senior SDR at WeRoad",
+    "subtitle": "Role change",
+    "date": "Apr 2, 2025",
+    "unread": true
+  }
 ]
