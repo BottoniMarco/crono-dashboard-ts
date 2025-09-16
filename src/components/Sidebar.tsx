@@ -133,7 +133,7 @@ export default function Sidebar(): JSX.Element {
   const [active, setActive] = useState<ItemKey>('dashboard')
   const [analyticsOpen, setAnalyticsOpen] = useState(false)
 
-  const widthClass = useMemo(() => (collapsed ? 'w-16' : 'w-64'), [collapsed])
+  const widthClass = useMemo(() => (collapsed ? 'w-16' : 'w-48'), [collapsed])
 
   const handleToggleCollapsed = () => {
     setCollapsed(v => {
@@ -146,7 +146,7 @@ export default function Sidebar(): JSX.Element {
   return (
     <aside className={`${widthClass} shrink-0 transition-all duration-200`}>
       <div className="bg-white border border-slate-200 rounded-2xl shadow-sm h-full flex flex-col">
-        {/* Brand / collapse toggle */}
+        {/* collapse toggle */}
         <div className="flex items-center justify-between px-4 pt-4 pb-3">
           <div className="flex items-center gap-2">
             <Icon name="brand" className="h-5 w-5" />
@@ -197,7 +197,7 @@ export default function Sidebar(): JSX.Element {
                   }}
                   title={titleAttr}
                 >
-                  {/* Icon color mirrors active state */}
+
                   <span className={isActive && !collapsed ? 'text-teal-600' : 'text-slate-500'}>
                     <Icon name={item.key} />
                   </span>
@@ -212,7 +212,7 @@ export default function Sidebar(): JSX.Element {
                     </span>
                   )}
 
-                  {/* Inbox badge — hidden when collapsed */}
+
                   {!collapsed && item.key === 'inbox' && item.badge ? (
                     <span
                       className="ml-auto inline-flex items-center justify-center rounded-full px-2.5 h-5 text-[11px] bg-amber-400 text-white font-semibold"
@@ -222,7 +222,7 @@ export default function Sidebar(): JSX.Element {
                     </span>
                   ) : null}
 
-                  {/* Analytics caret (only expanded) */}
+ 
                   {isAnalytics && showLabel && (
                     <svg
                       viewBox="0 0 24 24"
@@ -236,7 +236,6 @@ export default function Sidebar(): JSX.Element {
                   )}
                 </button>
 
-                {/* Analytics submenu (only expanded) */}
                 {isAnalytics && analyticsOpen && !collapsed && (
                   <div className="ml-9 mt-1 mb-2 space-y-1">
                     {item.children!.map(child => (
@@ -256,10 +255,8 @@ export default function Sidebar(): JSX.Element {
           })}
         </nav>
 
-        {/* Spacer */}
         <div className="flex-1" />
 
-        {/* Trial reminder — hidden when collapsed */}
         {!collapsed && (
           <div className="px-4">
             <div className="rounded-xl bg-amber-50 border border-amber-100 p-3 mb-3">
@@ -274,14 +271,13 @@ export default function Sidebar(): JSX.Element {
           </div>
         )}
 
-        {/* User footer */}
         <div className="mt-auto border-t border-slate-100 px-4 py-3">
           <button
             type="button"
             className={
               'w-full flex items-center rounded-xl ' +
               (collapsed
-                ? 'justify-center px-0 py-2' // center avatar when collapsed
+                ? 'justify-center px-0 py-2' 
                 : 'gap-3 px-2 py-2 hover:bg-slate-50')
             }
             title={collapsed ? 'William Robertson — Sales' : undefined}
