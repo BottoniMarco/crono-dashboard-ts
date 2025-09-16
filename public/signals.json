@@ -1,0 +1,26 @@
+[
+    {
+        "id": "100",
+        "type": "role_change",
+        "title": "title_1",
+        "subtitle": "Role Change",
+        "date": "Sep 15, 2025",
+        "unread": true
+    },
+    {
+        "id": "200",
+        "type": "company_change",
+        "title": "title_2",
+        "subtitle": "Company change",
+        "date": "Sep 15, 2025",
+        "unread": true
+    },
+    {
+        "id": "300",
+        "type": "website_view",
+        "title": "title_3",
+        "subtitle": "Website view",
+        "date": "Sep 15, 2025",
+        "unread": true
+    }
+]
